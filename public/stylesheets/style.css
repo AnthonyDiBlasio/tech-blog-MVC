@@ -8,23 +8,23 @@ html {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    color: #333;
+    color: rgb(219, 223, 230);
 }
 
 main,
 .site-name {
-    background-color: #2ca3bb;
+    background-color: #363f57;
 }
 
 a,
 .btn-no-style,
 #comment-subtitle {
-    color: #051ba5;
+    color: #f1f1f1;
 }
 
 a:hover,
 .btn-no-style:hover {
-    color: #592cec;
+    color: #ffffff;
 }
 
 a {
@@ -34,7 +34,7 @@ a {
 }
 
 button {
-    background-color: #225ca3;
+    background-color: #000000;
     border: 0;
     padding: 1%;
     color: white;
@@ -45,7 +45,7 @@ button {
 }
 
 button:hover {
-    background-color: #3486eb;
+    background-color: #dee3e8;
 }
 
 .post-list {
@@ -55,20 +55,20 @@ button:hover {
 }
 
 .go-back {
-    color: #2c2307;
+    color: #000000;
 }
 
 textarea,
 input {
     padding: .5%;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(243, 240, 240);
 }
 
 textarea:focus,
 input:focus {
     outline: none;
-    border: 1px solid #3486eb;
+    border: 1px solid #ebebeb;
 }
 
 textarea {
@@ -103,7 +103,7 @@ header,
 .site-row,
 .info-section,
 .form-heading {
-    background-color: #305bd2;
+    background-color: #465380;
 }
 
 .login-page,
@@ -144,7 +144,7 @@ header h1 {
 
 .site-row {
     display: flex;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgb(250, 246, 246);
     justify-content: center;
 }
 
@@ -176,11 +176,11 @@ main {
 }
 
 .delete-post-btn {
-    background-color: #3a119a;
+    background-color: #030403;
 }
 
 .delete-post-btn:hover {
-    background-color: #5a4742;
+    background-color: #000000;
 }
 
 .post {
@@ -192,13 +192,13 @@ main {
 .post .title span {
     font-style: italic;
     font-size: 90%;
-    color: #7d7d7d;
+    color: #000000;
 }
 
 .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
-    color: #b7b4aa;
+    color: #000000;
 }
 
 .comment-form {
