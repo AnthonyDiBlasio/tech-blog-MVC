@@ -13,18 +13,18 @@ html {
 
 main,
 .site-name {
-    background-color: #b8cba2;
+    background-color: #2ca3bb;
 }
 
 a,
 .btn-no-style,
 #comment-subtitle {
-    color: #b8cba2;
+    color: #051ba5;
 }
 
 a:hover,
 .btn-no-style:hover {
-    color: #e2edd5;
+    color: #592cec;
 }
 
 a {
@@ -103,7 +103,7 @@ header,
 .site-row,
 .info-section,
 .form-heading {
-    background-color: #2c2307;
+    background-color: #305bd2;
 }
 
 .login-page,
@@ -176,11 +176,11 @@ main {
 }
 
 .delete-post-btn {
-    background-color: #d41414;
+    background-color: #3a119a;
 }
 
 .delete-post-btn:hover {
-    background-color: #ff643d;
+    background-color: #5a4742;
 }
 
 .post {
@@ -198,7 +198,7 @@ main {
 .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
-    color: #2c2307;
+    color: #b7b4aa;
 }
 
 .comment-form {
@@ -244,7 +244,7 @@ main {
 
 .sign-in-link,
 .login-link {
-    color: #2c2307;
+    color: #000000;
 }
 
 .form-heading h1,
