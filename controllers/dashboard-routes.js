@@ -8,8 +8,8 @@ const {
 const withAuth = require('../utils/auth');
 
 
-router.get('/', withAuth, (req, res) => {
-    Post.findAll({
+router.get('/', withAuth, async(req, res) => {
+     await Post.findAll({
         where: {
             user_id: req.session.user_id
         },
@@ -32,8 +32,8 @@ router.get('/', withAuth, (req, res) => {
         }
         ]
     })
-        .then(dbPostData => {
-            const profile = dbPostData.map(data => data.get({
+        .then(PostData => {
+            const profile = PostData.map(data => data.get({
                 plain: true
             }));
             res.render('dashboard', {
@@ -47,8 +47,8 @@ router.get('/', withAuth, (req, res) => {
         });
 });
 
-router.get('/edit/:id', withAuth, (req, res) => {
-    Post.findOne({
+router.get('/edit/:id', withAuth, async (req, res) => {
+    await Post.findOne({
         where: {
             id: req.params.id
         },
@@ -72,15 +72,15 @@ router.get('/edit/:id', withAuth, (req, res) => {
         }
         ]
     })
-        .then(dbPostData => {
-            if (!dbPostData) {
+        .then(PostData => {
+            if (!PostData) {
                 res.status(404).json({
                     message: 'No post found with this id'
                 });
                 return;
             }
 
-            const post = dbPostData.get({
+            const post = PostData.get({
                 plain: true
             });
 
