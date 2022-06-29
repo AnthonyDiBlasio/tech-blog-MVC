@@ -7,8 +7,8 @@ const {
 } = require('../models');
 
 
-router.get('/', (req, res) => {
-    Post.findAll({
+router.get('/', async (req, res) => {
+    await Post.findAll({
             attributes: [
                 'id',
                 'title',
@@ -29,8 +29,8 @@ router.get('/', (req, res) => {
                 }
             ]
         })
-        .then(dbPostData => {
-            const posts = dbPostData.map(post => post.get({
+        .then(PostData => {
+            const posts = PostData.map(post => post.get({
                 plain: true
             }));
 
@@ -45,8 +45,8 @@ router.get('/', (req, res) => {
         });
 });
 
-router.get('/post/:id', (req, res) => {
-    Post.findOne({
+router.get('/post/:id', async (req, res) => {
+    await Post.findOne({
             where: {
                 id: req.params.id
             },
@@ -70,15 +70,15 @@ router.get('/post/:id', (req, res) => {
                 }
             ]
         })
-        .then(dbPostData => {
-            if (!dbPostData) {
+        .then(PostData => {
+            if (!PostData) {
                 res.status(404).json({
                     message: 'No post found with this id'
                 });
                 return;
             }
 
-            const post = dbPostData.get({
+            const post = PostData.get({
                 plain: true
             });
 
