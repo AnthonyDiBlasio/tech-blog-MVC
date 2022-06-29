@@ -19,12 +19,12 @@ main,
 a,
 .btn-no-style,
 #comment-subtitle {
-    color: #f1f1f1;
+    color: #4161a1;
 }
 
 a:hover,
 .btn-no-style:hover {
-    color: #ffffff;
+    color: #5364a7;
 }
 
 a {
@@ -211,7 +211,7 @@ main {
 }
 
 .comment:nth-child(odd) {
-    background-color: #fff5eb;
+    background-color: #4161a1;
 }
 
 .comment .meta {
