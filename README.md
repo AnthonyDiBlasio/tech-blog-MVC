@@ -16,8 +16,10 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 * [Tests](#tests)
 * [Questions](#questions)
 ## Installation
-Deployed to heroku: 
+Deployed to heroku: https://tech-blog119.herokuapp.com/
 ## Usage
+link to video of application use
+https://drive.google.com/file/d/14u7Wpsq6oAxSnL0HY4Qy0E57ifLAx_hd/view?usp=sharing
 ```md
 GIVEN a CMS-style blog site
 WHEN I visit the site for the first time
@@ -53,6 +55,7 @@ THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
 ```
+Deployed to heroku: https://tech-blog119.herokuapp.com/
 ## License
 
 This application is covered by the GNU General Purpose License, the terms of which can be found [here](https://www.gnu.org/licenses/gpl-3.0.en.html).
