@@ -61,7 +61,7 @@ Deployed to heroku: https://tech-blog119.herokuapp.com/
 This application is covered by the GNU General Purpose License, the terms of which can be found [here](https://www.gnu.org/licenses/gpl-3.0.en.html).
     
 ## Contributing
-GitHub Profile](https://github.com/anthonydiblasio/
+[GitHub Profile](https://github.com/anthonydiblasio/
 ## Tests
 none
 ## Questions
